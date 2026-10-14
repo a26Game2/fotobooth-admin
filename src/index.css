@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { * { @apply border-zinc-200; } body { @apply bg-[#f8f8f7] text-ink antialiased; } input, textarea, select { @apply outline-none; } }
+@layer components { .card { @apply rounded-2xl border border-zinc-200 bg-white shadow-card; } .field { @apply mt-1 w-full rounded-xl border border-zinc-300 bg-white px-3 py-2.5 text-sm transition focus:border-red-500 focus:ring-4 focus:ring-red-50; } .label { @apply text-xs font-bold uppercase tracking-wider text-zinc-500; } .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition disabled:cursor-not-allowed disabled:opacity-50; } .btn-primary { @apply btn bg-red-600 text-white hover:bg-red-700; } .btn-secondary { @apply btn border border-zinc-300 bg-white text-zinc-700 hover:bg-zinc-50; } }
